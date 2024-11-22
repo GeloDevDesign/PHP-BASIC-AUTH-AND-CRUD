@@ -2,6 +2,7 @@
 
 class Router {
     private $controllerMap = [];
+    
 
     public function add($action, $controllerClass, $method) {
         $this->controllerMap[$action] = [$controllerClass, $method];
@@ -22,7 +23,7 @@ class Router {
         } else {
             $controller->$method();
         };
-        
+
     } else {
         header("Location: index.php?action=login");
     }
