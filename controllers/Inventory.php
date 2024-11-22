@@ -1,5 +1,5 @@
 <?php
-require_once './models/Inventory.php';
+require_once '../models/Inventory.php';
 
 class InventoryController {
     private $inventoryModel;
@@ -16,7 +16,7 @@ class InventoryController {
         }
         $userId = $_SESSION['user']['id'];
         $inventory = $this->inventoryModel->getAllInventory($userId);
-        require './views/inventory_list.php';
+        require '../views/inventory_list.php';
     }
 
     public function createInventory() {
@@ -51,7 +51,7 @@ class InventoryController {
             }
         } else {
             $inventory = $this->inventoryModel->getInventoryById($id);
-            require './views/inventory_edit.php';
+            require '../views/inventory_edit.php';
         }
     }
 

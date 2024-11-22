@@ -1,5 +1,6 @@
 <?php
-require_once './models/User.php';
+
+require_once '../models/User.php';
 
 class AuthController
 {
@@ -26,7 +27,7 @@ class AuthController
       }
     }
 
-    require './views/login.php';
+    require '../views/login.php';
   }
 
   public function register()
@@ -42,6 +43,6 @@ class AuthController
       }
     }
 
-    require './views/register.php';
+    require '../views/register.php';
   }
 }
