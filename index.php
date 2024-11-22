@@ -5,7 +5,7 @@ require_once './controllers/AuthController.php';
 require_once './controllers/UserController.php';
 require_once './controllers/Inventory.php';
 require_once './Router.php';
-
+   
 // Create a Router instance
 $router = new Router();
 
